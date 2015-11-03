@@ -1,0 +1,3 @@
+
+DROP DATABASE IF EXISTS `sales`;
+CREATE DATABASE `sales`;
