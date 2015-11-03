@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class project.app.server.service.AddressTypeTestCase</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class project.app.server.service.AddressTypeTestCase</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/project.app.server.service.html">project.app.server.service</a> &gt; AddressTypeTestCase</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">4</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">0.197s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">test1Save</td>
+<td>0.087s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">test2Update</td>
+<td>0.055s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">test3FindById</td>
+<td>0.006s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">test4Delete</td>
+<td>0.049s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>Setting logged in user info for ADD
+In around repository aspect
+[EL Fine]: sql: 2015-11-03 11:28:53.802--ClientSession(259933482)--Connection(1529603035)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_AddressType_M (addressTypeId, addressType, addressTypeDesc, addressTypeIcon, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind =&gt; [CAF3DFE9-85F6-4218-816A-E93F97B2DF35, aTb3tqx9JLPgTlGMVp45G9bD4joEnBW2eX3JdCgLIN1F63IVGu, ZBEGd3CHtbDMDAosUkUpMkSPa38JGDX0NjvYbEm3HOLORSmfKN, cTO4swCHxDaXqwakvIpm5FaEHOCnARPfjkBtMhh5xqJk0UEmJ0, 1, AAAAA, 2015-11-03 16:58:53.795, null, 2015-11-03 16:58:53.795, 1, null]
+In around repository aspect
+[EL Fine]: sql: 2015-11-03 11:28:53.878--ClientSession(330746325)--Connection(1529603035)--Thread(Thread[Test worker,5,main])--SELECT addressTypeId, addressType, addressTypeDesc, addressTypeIcon, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_AddressType_M WHERE ((activeStatus = ?) AND (addressTypeId = ?))
+	bind =&gt; [1, CAF3DFE9-85F6-4218-816A-E93F97B2DF35]
+Setting logged in user info for UPDATE
+In around repository aspect
+[EL Fine]: sql: 2015-11-03 11:28:53.881--ClientSession(1631306406)--Connection(1529603035)--Thread(Thread[Test worker,5,main])--SELECT addressTypeId, addressType, addressTypeDesc, addressTypeIcon, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_AddressType_M WHERE (addressTypeId = ?)
+	bind =&gt; [CAF3DFE9-85F6-4218-816A-E93F97B2DF35]
+[EL Fine]: sql: 2015-11-03 11:28:53.882--ClientSession(1631306406)--Connection(1529603035)--Thread(Thread[Test worker,5,main])--UPDATE ast_AddressType_M SET addressType = ?, addressTypeDesc = ?, addressTypeIcon = ?, updatedBy = ?, versionId = ? WHERE ((addressTypeId = ?) AND (versionId = ?))
+	bind =&gt; [PEGkSe4wCO2S3IMKGY13CLFH2SUt55J5mrvMOEGPZ1ZSipPZoE, qJrkRa7l2npmZrqxpW6KRC2dFu4gix9HHdT9t070yiGmSRP8DZ, qMuZWdEpAzuNgcZxCsqjUGKffjClD7jSCL33RpDQGlB6dCJkuj, AAAAA, 2, CAF3DFE9-85F6-4218-816A-E93F97B2DF35, 1]
+In around repository aspect
+[EL Fine]: sql: 2015-11-03 11:28:53.936--ClientSession(1348962779)--Connection(1529603035)--Thread(Thread[Test worker,5,main])--SELECT addressTypeId, addressType, addressTypeDesc, addressTypeIcon, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_AddressType_M WHERE ((activeStatus = ?) AND (addressTypeId = ?))
+	bind =&gt; [1, CAF3DFE9-85F6-4218-816A-E93F97B2DF35]
+In around repository aspect
+[EL Fine]: sql: 2015-11-03 11:28:53.942--ClientSession(629254688)--Connection(1529603035)--Thread(Thread[Test worker,5,main])--SELECT addressTypeId, addressType, addressTypeDesc, addressTypeIcon, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_AddressType_M WHERE (addressTypeId = ?)
+	bind =&gt; [CAF3DFE9-85F6-4218-816A-E93F97B2DF35]
+[EL Fine]: sql: 2015-11-03 11:28:53.944--ClientSession(629254688)--Connection(1529603035)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_AddressType_M WHERE ((addressTypeId = ?) AND (versionId = ?))
+	bind =&gt; [CAF3DFE9-85F6-4218-816A-E93F97B2DF35, 2]
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 2.3</a> at Nov 3, 2015 11:29:02 AM</p>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class project.app.server.service.UserAccessLevelTestCase</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class project.app.server.service.UserAccessLevelTestCase</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/project.app.server.service.html">project.app.server.service</a> &gt; UserAccessLevelTestCase</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">4</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">0.353s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">test1Save</td>
+<td>0.098s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">test2Update</td>
+<td>0.134s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">test3FindById</td>
+<td>0.007s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">test4Delete</td>
+<td>0.114s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>Setting logged in user info for ADD
+In around repository aspect
+[EL Fine]: sql: 2015-11-03 11:28:43.358--ClientSession(549900406)--Connection(1529603035)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_UserAccessLevel_M (userAccessLevelId, levelDescription, levelHelp, levelIcon, levelName, userAccessLevel, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind =&gt; [AB0AFAB3-3DB0-400B-ACCA-6052BEE5CC1A, dcIMjZGHseBjIW2sUkoS1d7yanaBHZqryQ8F0dKeqy1w19abr3, 08VeVsUDMTLbWvEnL8TnlVjLQeCuUiGnY4T481R7H3YHcvQB7c, 1lLspoDu69pDNSSXkKlml5FSFfMpT42Bws5hIdc4ZWI0Bw8GLP, 3SHgFAz55tjAhsXxepmmsTHFrUIukOzYlNyxZXk4iiGxRCTVTw, 24934, 1, AAAAA, 2015-11-03 16:58:43.316, null, 2015-11-03 16:58:43.316, 1, null]
+In around repository aspect
+[EL Fine]: sql: 2015-11-03 11:28:43.411--ClientSession(1833207236)--Connection(1529603035)--Thread(Thread[Test worker,5,main])--SELECT userAccessLevelId, levelDescription, levelHelp, levelIcon, levelName, userAccessLevel, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_UserAccessLevel_M WHERE ((activeStatus = ?) AND (userAccessLevelId = ?))
+	bind =&gt; [1, AB0AFAB3-3DB0-400B-ACCA-6052BEE5CC1A]
+Setting logged in user info for UPDATE
+In around repository aspect
+[EL Fine]: sql: 2015-11-03 11:28:43.414--ClientSession(714293839)--Connection(1529603035)--Thread(Thread[Test worker,5,main])--SELECT userAccessLevelId, levelDescription, levelHelp, levelIcon, levelName, userAccessLevel, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_UserAccessLevel_M WHERE (userAccessLevelId = ?)
+	bind =&gt; [AB0AFAB3-3DB0-400B-ACCA-6052BEE5CC1A]
+[EL Fine]: sql: 2015-11-03 11:28:43.416--ClientSession(714293839)--Connection(1529603035)--Thread(Thread[Test worker,5,main])--UPDATE ast_UserAccessLevel_M SET levelDescription = ?, levelHelp = ?, levelIcon = ?, levelName = ?, userAccessLevel = ?, updatedBy = ?, versionId = ? WHERE ((userAccessLevelId = ?) AND (versionId = ?))
+	bind =&gt; [Kb7i8WlLwmE1qb2Gmg88miCywqCm8pMm0PIOSQmvgk3aGYAGfF, cXLrkTU8178rldgERSfwTkbrpc66gFkSOx3YDFFH15AZN9fQhC, Mbqex9RYeuimzzUrMaAqvZyVNEj7OU3b6FstuONnF1bSejD5Nq, AV085Y9IqxzcLKgDlAGKIzUE1xQpyAqDmy9UkDJztnwjRQqimP, 60387, AAAAA, 2, AB0AFAB3-3DB0-400B-ACCA-6052BEE5CC1A, 1]
+In around repository aspect
+[EL Fine]: sql: 2015-11-03 11:28:43.544--ClientSession(954519762)--Connection(1529603035)--Thread(Thread[Test worker,5,main])--SELECT userAccessLevelId, levelDescription, levelHelp, levelIcon, levelName, userAccessLevel, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_UserAccessLevel_M WHERE ((activeStatus = ?) AND (userAccessLevelId = ?))
+	bind =&gt; [1, AB0AFAB3-3DB0-400B-ACCA-6052BEE5CC1A]
+In around repository aspect
+[EL Fine]: sql: 2015-11-03 11:28:43.552--ClientSession(1530103990)--Connection(1529603035)--Thread(Thread[Test worker,5,main])--SELECT userAccessLevelId, levelDescription, levelHelp, levelIcon, levelName, userAccessLevel, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_UserAccessLevel_M WHERE (userAccessLevelId = ?)
+	bind =&gt; [AB0AFAB3-3DB0-400B-ACCA-6052BEE5CC1A]
+[EL Fine]: sql: 2015-11-03 11:28:43.553--ClientSession(1530103990)--Connection(1529603035)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_UserAccessLevel_M WHERE ((userAccessLevelId = ?) AND (versionId = ?))
+	bind =&gt; [AB0AFAB3-3DB0-400B-ACCA-6052BEE5CC1A, 2]
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 2.3</a> at Nov 3, 2015 11:29:02 AM</p>
+</div>
+</div>
+</body>
+</html>

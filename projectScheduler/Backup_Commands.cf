@@ -1,0 +1,33 @@
+
+
+
+ development mode --enabled true 
+
+
+
+// Spring batch Project Creation 
+
+project --topLevelPackage project --projectName projectScheduler
+quit
+
+
+ development mode --enabled true 
+
+
+
+buzzorproject --topLevelPackage project --isRuleEngine true --projectName projectScheduler --sourceCodeLocation /home/puja/applifire/appConfigTemplate/appSourceCode/ --tomcatDeployLocation "" --tomcatAbsolutePath /home/puja/Documents/software/apache-tomcat-7.0.42/webapps ---userName root --password root --schema jdbc:mysql://localhost:3306/information_schema --solrhome /home/puja/applifire/customers/ba9dced8-453e-49a3-b627-d497a1f91b17/user/18D01ABF-F632-496A-B379-FC50EDEAB8C0/WCWWPNJWOVPVNTBP6T8KA/solr-4.9.0 --isSpringBatch true
+
+entityManagerFactoryBean add property --name packagesToScan --value project.app,com.athena,com.spartan
+
+Persistent change persistentUnitName --name projectScheduler
+
+Persistent add property --name eclipselink.dialect --value org.eclipse.persistence.platform.database.MySQLPlatform
+
+Persistent add property --name javax.persistence.jdbc.url --value jdbc:mysql://localhost:3306/project
+
+Persistent add property --name javax.persistence.jdbc.user --value project
+
+Persistent add property --name javax.persistence.jdbc.password --value project
+
+Persistent add property --name javax.persistence.jdbc.driver --value com.mysql.jdbc.Driver
+quit
